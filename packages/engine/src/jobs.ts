@@ -68,6 +68,7 @@ import { FILE_JOIN_REQUEST_JOB, fileJoinRequest } from "./invite-requests";
 import { announceTaskConversation } from "./issues";
 import type { JevKey, JevKeySource } from "./jev-key";
 import { DEEP_MENTION_THRESHOLD, DEEP_WAKE_HOP, MENTION_WAKE_THRESHOLD, mentionNeedsNothing } from "./judge";
+import { LEGAL_ANALYSIS_JOB, processLegalAnalysis } from "./legalops";
 import { platformCapReached } from "./limits";
 import { wakeForAccessDecision } from "./machine-access";
 import type { MachineCaller } from "./machine-hub";
@@ -544,6 +545,9 @@ export function createJobHandlers(deps: JobDeps): JobHandlers {
   };
 
   const handlers: JobHandlers = {
+    [LEGAL_ANALYSIS_JOB]: async (job) => {
+      await processLegalAnalysis(deps, orgOf(job), String(job.payload.analysisId), Number(job.payload.step));
+    },
     // A wake the brakes deferred (its agent at its cap of unrequested work, or its computer full) looks again.
     [LATER_JOB]: async (job) => {
       const orgId = orgOf(job);

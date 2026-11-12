@@ -1,0 +1,10 @@
+# Apply after docker-compose.yml from the repository root. Builds this fork, never the upstream app image.
+services:
+  agentes:
+    image: legalops-chat:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    labels:
+      org.opencontainers.image.title: legalops.chat
+      org.opencontainers.image.source: https://github.com/agenciaspace/agentes-chat

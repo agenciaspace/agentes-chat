@@ -45,6 +45,7 @@ import { inviteRoutes } from "./routes/app/invites";
 import { issueRoutes } from "./routes/app/issues";
 import { jevRoutes } from "./routes/app/jev";
 import { knowledgeRoutes } from "./routes/app/knowledge";
+import { legalopsRoutes } from "./routes/app/legalops";
 import { machineAccountRoutes } from "./routes/app/machine-accounts";
 import { mailRoutes } from "./routes/app/mail";
 import { managementRoutes } from "./routes/app/management";
@@ -179,6 +180,7 @@ export function createApp(options: AppOptions) {
     api.route("/app", actionRoutes(deps));
     api.route("/app", channelRoutes(deps));
     api.route("/app", approvalRoutes(deps));
+    api.route("/app", legalopsRoutes(deps));
     api.route("/app", appRoutes(deps));
     api.route("/app", auditRoutes(deps));
     api.route("/app", customConnectorRoutes(deps));

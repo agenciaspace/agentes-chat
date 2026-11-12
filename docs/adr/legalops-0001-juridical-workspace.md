@@ -1,6 +1,7 @@
 # legalops-0001 · Ambiente jurídico com funcionários e agentes
 
-Status: proposta para implementação incremental.
+Status: fluxo inicial implementado neste fork. Implantação e migração de dados
+dependem da instância de destino. Veja [operação](../legalops-operations.md).
 
 ## Objetivo
 
