@@ -8,6 +8,7 @@
       "**",
       "!**/node_modules",
       "!**/dist",
+      "!**/.cloudflare",
       "!**/migrations/meta",
       "!**/*.html",
       "!docs/design",

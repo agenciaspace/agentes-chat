@@ -1,0 +1,6 @@
+# Copy to an ignored, chmod 600 file OUTSIDE version control. Synthetic examples only.
+DATABASE_URL=postgres://legalops:replace-me@your-postgres-host/legalops?sslmode=verify-full
+AGENTES_SECRET=replace-with-output-of-openssl-rand-hex-48
+PUBLIC_URL=https://legalops-platform-staging.your-subdomain.workers.dev
+ACCESS_TEAM_DOMAIN=https://your-team.cloudflareaccess.com
+ACCESS_AUD=replace-with-access-application-audience

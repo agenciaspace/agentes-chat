@@ -77,6 +77,10 @@ no navegador ou no código. Testes automatizados não precisam dessas chaves.
 
 ## Implantar uma instância independente
 
+Para Cloudflare, há uma implantação separada com Worker, Access e Containers em
+[deploy/cloudflare](../deploy/cloudflare/README.md), com PostgreSQL persistente
+externo. O roteiro abaixo continua sendo a alternativa com Docker Compose.
+
 Requisitos: servidor Linux com Docker Compose, disco persistente e recursos para
 o build do frontend e PostgreSQL com pgvector. O build e o typecheck consomem
 memória: execute-os separadamente. A imagem configura limite padrão de 8 GB para
