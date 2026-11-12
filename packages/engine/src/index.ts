@@ -159,6 +159,8 @@ export * from "./jev-key";
 export * from "./jobs";
 export * from "./judge";
 export * from "./key-line";
+export * from "./legalops";
+export * from "./legalops-files";
 export * from "./limits";
 export * from "./machine-access";
 export * from "./machine-accounts";

@@ -35,3 +35,4 @@ export * from "./vault/types";
 export function createApiClient(options: { fetch?: FetchLike } = {}): ApiClient {
   return createHttpApi({ fetch: options.fetch });
 }
+export * from "./lib/legalops";

@@ -37,9 +37,9 @@ permissions:
   contents: read
 
 env:
-  APP_IMAGE: ghcr.io/agentes-chat/agentes
-  BACKUP_IMAGE: ghcr.io/agentes-chat/backup
-  SPEECH_IMAGE: ghcr.io/agentes-chat/speech
+  APP_IMAGE: ghcr.io/${{ github.repository_owner }}/legalops-chat
+  BACKUP_IMAGE: ghcr.io/${{ github.repository_owner }}/legalops-backup
+  SPEECH_IMAGE: ghcr.io/${{ github.repository_owner }}/legalops-speech
 
 # A newer push supersedes a running check of the same branch or pull request (on main only the newest
 # commit's image matters); a release tag's run is never cancelled. A pull request's runs and a manual run

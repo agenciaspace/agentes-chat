@@ -20,7 +20,10 @@
     "@agenteschat/ui": "workspace:*",
     "@modelcontextprotocol/sdk": "^1.32.1",
     "@modelcontextprotocol/server": "2.3.1",
+    "fast-xml-parser": "^5.12.0",
+    "fflate": "^0.8.3",
     "libpg-query": "17",
+    "pdfjs-dist": "^6.5.438",
     "zod": "^4.6.5"
   },
   "devDependencies": {

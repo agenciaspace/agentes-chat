@@ -2,6 +2,16 @@
 
 Short records of decisions that shape the backend. One file per decision, numbered, never deleted: when a decision changes, add a new ADR and mark the old one "Superseded by".
 
+## LegalOps fork decisions
+
+The `legalops-` namespace belongs to this fork and does not consume upstream ADR numbers.
+
+| # | Decision |
+| --- | --- |
+| [legalops-0001](legalops-0001-juridical-workspace.md) | Private legal matters, immutable document text, source snapshots and human review |
+
+## Upstream decisions
+
 | # | Decision |
 | --- | --- |
 | [0001](0001-record-architecture-decisions.md) | Record architecture decisions |

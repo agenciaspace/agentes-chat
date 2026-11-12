@@ -1,6 +1,21 @@
-<p align="center">
-  <a href="https://agentes.chat"><img src="apps/web/public/favicon.svg" alt="agentes.chat" width="96"></a>
-</p>
+# legalops.chat
+
+Ambiente de trabalho jurídico para escritórios e departamentos com funcionários
+próprios. Este fork adiciona demandas privadas, documentos versionados, quatro
+etapas de análise com fontes verificadas e revisão humana.
+
+[Operação, limites e implantação](docs/legalops-operations.md) ·
+[Arquitetura](docs/adr/legalops-0001-juridical-workspace.md) ·
+[Equipe importável](examples/legalops/README.md)
+
+Use o override `deploy/legalops.compose.yml` para construir este fork. O site
+existente não é substituído automaticamente. As aplicações nativas ainda não
+foram preparadas para distribuição sob a marca legalops.chat.
+
+Based on agentes.chat by Codari Global, LLC (https://agentes.chat).
+Licença: AGPL-3.0-only, com os termos de atribuição em [NOTICE](NOTICE).
+
+## Documentação da plataforma de origem
 
 <h1 align="center">agentes.chat</h1>
 
